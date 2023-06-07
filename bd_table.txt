@@ -1,0 +1,5 @@
+CREATE TABLE player_records (
+    id SERIAL PRIMARY KEY,
+    player_name VARCHAR(100) NOT NULL,
+    score INTEGER NOT NULL
+);

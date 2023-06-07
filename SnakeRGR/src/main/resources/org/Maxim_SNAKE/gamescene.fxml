@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="600.0" style="-fx-padding: 20;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.Maxim_SNAKE.controller.Controller">
+    <Pane prefHeight="440.0" prefWidth="370.0" style="-fx-border-color: grey; -fx-border-width: 1px;">
+        <HBox.margin>
+            <Insets right="30.0" />
+        </HBox.margin>
+        <Canvas fx:id="gameCanvas" height="440.0" width="370.0" />
+    </Pane>
+    <VBox alignment="TOP_CENTER" prefHeight="440.0" prefWidth="160.0">
+        <padding>
+            <Insets top="20.0" />
+        </padding>
+        <Label text="Счёт:">
+         <font>
+            <Font name="GOST type B" size="16.0" />
+         </font></Label>
+        <Label fx:id="scoreValueLabel" />
+        <Label text="Выбор цвета сетки">
+         <font>
+            <Font name="GOST type B" size="15.0" />
+         </font></Label>
+        <ChoiceBox fx:id="colorChoiceBox" />
+        <Label text="Выбор цвета змеи ">
+         <font>
+            <Font name="GOST type B" size="15.0" />
+         </font></Label>
+        <ChoiceBox fx:id="snakeColorChoiceBox" />
+        <Label text="Выбор цвета фруктов ">
+         <font>
+            <Font name="GOST type B" size="15.0" />
+         </font></Label>
+        <ChoiceBox fx:id="fruitColorChoiceBox" />
+        <Label text="Выбор уровня сложности ">
+         <font>
+            <Font name="GOST type B" size="15.0" />
+         </font></Label>
+        <ChoiceBox fx:id="difficultyChoiceBox" />
+      <Button fx:id="showRecordsButton" mnemonicParsing="false" text="Рекорды">
+         <VBox.margin>
+            <Insets top="16.0" />
+         </VBox.margin>
+      </Button>
+
+    </VBox>
+</HBox>
